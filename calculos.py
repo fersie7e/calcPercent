@@ -7,6 +7,7 @@ def calcular_porcentaje():
             neto = float(st.session_state['neto'])
             porcentaje = float(st.session_state['porcentaje'])
             resultado = neto * (1+(porcentaje/100))
+            resultado = round(resultado, 2)
             return resultado
 
     except:
